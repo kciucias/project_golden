@@ -1,0 +1,21 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic);
+* { box-sizing: border-box; }
+
+body { margin: 0 auto; font-family: "Open Sans", sans-serif; background-color: #000; }
+
+/*HERO*/
+.hero { background: url(https://images.unsplash.com/photo-1497864149936-d3163f0c0f4b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=362d7bfa3bb12d109ccec4ef185281cf&auto=format&fit=crop&w=500&q=60) 0/cover no-repeat; min-height: 700px; margin: 0 70px; }
+
+.hero p { float: left; padding-left: 300px; color: #f1c40f; -ms-flex-positive: 2; flex-grow: 2; font-size: 32px; }
+
+.hero ul { display: -ms-flexbox; display: flex; -ms-flex-pack: end; justify-content: flex-end; height: 100px; -ms-flex-align: center; align-items: center; margin-right: 200px; }
+
+.hero ul li { text-decoration: none; padding: 30px; text-transform: uppercase; list-style: none; }
+
+.hero ul li > a { color: #fff; text-decoration: none; }
+
+.hero h2 { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; font-size: 34px; color: #fff; margin-top: 100px; }
+
+.hero h1 { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; font-size: 78px; color: #fff; text-transform: uppercase; }
+
+.hero button { display: -ms-flexbox; display: flex; height: 106px; width: 330px; color: #fff; background-color: #f1c40f; margin: 0 auto; -ms-flex-pack: center; justify-content: center; text-transform: uppercase; font-size: 32px; border-radius: 5px; border-color: #f1c40f; }
