@@ -8,7 +8,25 @@
 $color-white: #fff;
 $color-gold: #f1c40f;
 $color-black: #000;
+$color-grey: #ccc;
 $fonts: 'Open Sans', sans-serif;
+
+//extends
+.layout-hight {
+	min-height: 700px;
+	margin: 0 70px;
+}
+.icon-btn {
+	height: 100px;
+	line-height: 100px;
+	width: 100px;
+	cursor: pointer;
+	font-size: 70px;
+	background-color: $color-white;
+	color: $color-gold;
+	border-radius: 50%;
+	text-align: center;
+}
 
 body {
   margin: 0 auto;
@@ -20,8 +38,7 @@ body {
 
 .hero {
 	background: url(https://images.unsplash.com/photo-1497864149936-d3163f0c0f4b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=362d7bfa3bb12d109ccec4ef185281cf&auto=format&fit=crop&w=500&q=60) 0/cover no-repeat;
-	min-height: 700px;
-	margin: 0 70px;
+	@extend .layout-hight;
 	.nav {
 		display: flex; // for all elements in container
 		justify-content: space-around; // for all elements
@@ -80,7 +97,59 @@ body {
 	}
 }
 
-  	
+/*SERVICES*/
+
+.services {
+	display: flex;
+	background-color: $color-white;
+	@extend .layout-hight;
+	flex-direction: column;
+	padding: 50px 300px;
+	.small-services {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		h1 {
+			color: $color-black;
+			font-size: 52px;
+			text-transform: uppercase;
+			margin-top: 100px;
+			margin-bottom: 0;
+			text-shadow: 1px 1px 3px;
+		}
+		p {
+			color: $color-grey;
+			font-size: 20px;
+			margin-top: 10px;
+			font-weight: bold;
+		}
+	}
+	.three-columns {
+		display: flex;
+		flex-direction: row;
+		padding-top: 50px;
+		.one-column {
+			i {
+				@extend .icon-btn;
+				text-align: center;
+				margin: 0 auto;
+			}
+			 
+			 h4 {
+				font-size: 24px;
+				margin-top: 5px;
+				margin-bottom: 5px;
+				text-align: center;
+			}
+			 p {
+				margin-top: 0px;
+				font-size: 18px;
+				color: $color-grey;
+				text-align: center;
+			}
+		}
+	}
+} 	
 	
 	
 	
