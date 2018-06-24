@@ -1,11 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic);
 * { box-sizing: border-box; }
 
-.layout-hight, .hero, .services { min-height: 700px; margin: 0 70px; }
-
-.icon-btn, .services .three-columns .one-column i { height: 100px; line-height: 100px; width: 100px; cursor: pointer; font-size: 70px; background-color: #fff; color: #f1c40f; border-radius: 50%; text-align: center; }
-
 body { margin: 0 auto; font-family: "Open Sans", sans-serif; background-color: #000; }
+
+.layout-hight, .hero, .services, .portfolio { min-height: 700px; }
+
+.icon-btn, .services .three-columns .one-column .center i { height: 100px; line-height: 100px; width: 100px; cursor: pointer; font-size: 70px; background-color: #fff; color: #f1c40f; border-radius: 50%; text-align: center; }
+
+.heading h1, .services .small-services h1, .portfolio .our-portfolio h1 { color: #000; font-size: 52px; text-transform: uppercase; margin-top: 100px; margin-bottom: 0; text-shadow: 1px 1px 3px; }
+
+.heading p, .services .small-services p, .portfolio .our-portfolio p { color: #ccc; font-size: 20px; margin-top: 10px; font-weight: bold; }
 
 /*HERO*/
 .hero { background: url(https://images.unsplash.com/photo-1497864149936-d3163f0c0f4b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=362d7bfa3bb12d109ccec4ef185281cf&auto=format&fit=crop&w=500&q=60) 0/cover no-repeat; }
@@ -31,18 +35,32 @@ body { margin: 0 auto; font-family: "Open Sans", sans-serif; background-color: #
 .hero .small-hero button { display: -ms-flexbox; display: flex; height: 106px; width: 330px; color: #fff; background-color: #f1c40f; margin: 0 auto; -ms-flex-pack: center; justify-content: center; text-transform: uppercase; font-size: 32px; border-radius: 5px; border-color: #f1c40f; }
 
 /*SERVICES*/
-.services { display: -ms-flexbox; display: flex; background-color: #fff; -ms-flex-direction: column; flex-direction: column; padding: 50px 300px; }
+.services { display: -ms-flexbox; display: flex; background-color: #fff; -ms-flex-direction: column; flex-direction: column; padding: 50px 150px; }
 
 .services .small-services { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; }
 
-.services .small-services h1 { color: #000; font-size: 52px; text-transform: uppercase; margin-top: 100px; margin-bottom: 0; text-shadow: 1px 1px 3px; }
-
-.services .small-services p { color: #ccc; font-size: 20px; margin-top: 10px; font-weight: bold; }
-
 .services .three-columns { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; padding-top: 50px; }
 
-.services .three-columns .one-column i { text-align: center; margin: 0 auto; }
+.services .three-columns .one-column { padding: 0 30px; }
+
+.services .three-columns .one-column .center { display: block; text-align: center; }
+
+.services .three-columns .one-column .center i { text-align: center; margin: 0 auto; }
 
 .services .three-columns .one-column h4 { font-size: 24px; margin-top: 5px; margin-bottom: 5px; text-align: center; }
 
 .services .three-columns .one-column p { margin-top: 0px; font-size: 18px; color: #ccc; text-align: center; }
+
+.portfolio { background-color: #ecf0f1; margin-bottom: 100px; }
+
+.portfolio .our-portfolio { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
+
+.portfolio .gallery { display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-pack: distribute; justify-content: space-around; margin-top: 100px; margin-bottom: 100px; }
+
+.portfolio .gallery .small-div { background-color: #fff; height: 400px; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; margin-top: 30px; margin-bottom: 30px; }
+
+.portfolio .gallery .small-div img { width: 350px; height: 350px; max-width: 100%; -ms-flex: 1; flex: 1; }
+
+.portfolio .gallery .small-div h3 { color: #000; text-align: center; margin-bottom: 0; }
+
+.portfolio .gallery .small-div p { color: #ccc; text-align: center; margin-top: 0; }
