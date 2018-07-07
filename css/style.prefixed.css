@@ -1,15 +1,27 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic);
 * { box-sizing: border-box; }
 
-body { margin: 0 auto; font-family: "Open Sans", sans-serif; background-color: #000; }
+body { margin: 0 auto; font-family: "Open Sans", sans-serif; background-color: #fff; }
 
-.layout-hight, .hero, .services, .portfolio { min-height: 700px; }
+.layout-hight, .hero, .services, .portfolio, .team { min-height: 700px; }
 
 .icon-btn, .services .three-columns .one-column .center i { height: 100px; line-height: 100px; width: 100px; cursor: pointer; font-size: 70px; background-color: #fff; color: #f1c40f; border-radius: 50%; text-align: center; }
 
-.heading h1, .services .small-services h1, .portfolio .our-portfolio h1 { color: #000; font-size: 52px; text-transform: uppercase; margin-top: 100px; margin-bottom: 0; text-shadow: 1px 1px 3px; }
+.heading h1, .services .small-services h1, .portfolio .our-portfolio h1, .about .about-us h1, .team .amazing-team h1 { color: #000; font-size: 52px; text-transform: uppercase; margin-top: 50px; margin-bottom: 0; text-shadow: 1px 1px 3px; }
 
-.heading p, .services .small-services p, .portfolio .our-portfolio p { color: #ccc; font-size: 20px; margin-top: 10px; font-weight: bold; }
+.heading p, .services .small-services p, .portfolio .our-portfolio p, .about .about-us p, .team .amazing-team p { color: #ccc; font-size: 20px; margin-top: 10px; font-weight: bold; }
+
+.div-about-us, .about .july-2010, .about .january-2011, .about .december-2012, .about .february-2014 { display: -ms-flexbox; display: flex; background-color: white; -ms-flex-pack: center; justify-content: center; margin-top: 80px; }
+
+.div-about-us .small-h, .about .july-2010 .small-h, .about .january-2011 .small-h, .about .december-2012 .small-h, .about .february-2014 .small-h { max-height: 170px; max-width: 300px; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; margin-right: 30px; }
+
+.div-about-us .small-h h1, .about .july-2010 .small-h h1, .about .january-2011 .small-h h1, .about .december-2012 .small-h h1, .about .february-2014 .small-h h1 { font-size: 18px; text-transform: uppercase; margin-top: 0; margin-bottom: 0; text-align: right; }
+
+.div-about-us .small-h h2, .about .july-2010 .small-h h2, .about .january-2011 .small-h h2, .about .december-2012 .small-h h2, .about .february-2014 .small-h h2 { font-size: 18px; margin-bottom: 0; text-align: right; margin-top: 0; }
+
+.div-about-us .small-h p, .about .july-2010 .small-h p, .about .january-2011 .small-h p, .about .december-2012 .small-h p, .about .february-2014 .small-h p { font-size: 14px; text-align: right; }
+
+.div-about-us img, .about .july-2010 img, .about .january-2011 img, .about .december-2012 img, .about .february-2014 img { width: 170px; height: 170px; border-radius: 50%; border: 6px solid #f1f1f1; }
 
 /*HERO*/
 .hero { background: url(https://images.unsplash.com/photo-1497864149936-d3163f0c0f4b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=362d7bfa3bb12d109ccec4ef185281cf&auto=format&fit=crop&w=500&q=60) 0/cover no-repeat; }
@@ -18,11 +30,11 @@ body { margin: 0 auto; font-family: "Open Sans", sans-serif; background-color: #
 
 .hero .nav div { display: -ms-flexbox; display: flex; -ms-flex-pack: start; justify-content: flex-start; }
 
-.hero .nav div > p { color: #f1c40f; font-size: 32px; }
+.hero .nav div > p { color: #f1c40f; width: 79px; height: 28px; color: #fed136; color: #ffffff; font-family: "Wisdom - Script"; font-size: 26px; font-weight: 400; line-height: 41px; /* Text style for "G, olden" */ color: #fed136; letter-spacing: 1.3px; }
 
 .hero .nav ul { display: -ms-flexbox; display: flex; -ms-flex-pack: end; justify-content: flex-end; height: 100px; }
 
-.hero .nav ul li { text-decoration: none; padding: 20px; text-transform: uppercase; list-style: none; }
+.hero .nav ul li { text-decoration: none; font-size: 14px; font-weight: 400; line-height: 41px; padding: 20px; text-transform: uppercase; list-style: none; }
 
 .hero .nav ul li > a { color: #fff; text-decoration: none; }
 
@@ -35,7 +47,7 @@ body { margin: 0 auto; font-family: "Open Sans", sans-serif; background-color: #
 .hero .small-hero button { display: -ms-flexbox; display: flex; height: 106px; width: 330px; color: #fff; background-color: #f1c40f; margin: 0 auto; -ms-flex-pack: center; justify-content: center; text-transform: uppercase; font-size: 32px; border-radius: 5px; border-color: #f1c40f; }
 
 /*SERVICES*/
-.services { display: -ms-flexbox; display: flex; background-color: #fff; -ms-flex-direction: column; flex-direction: column; padding: 50px 150px; }
+.services { display: -ms-flexbox; display: flex; background-color: #fff; -ms-flex-direction: column; flex-direction: column; margin: 50px 200px; }
 
 .services .small-services { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; }
 
@@ -51,16 +63,92 @@ body { margin: 0 auto; font-family: "Open Sans", sans-serif; background-color: #
 
 .services .three-columns .one-column p { margin-top: 0px; font-size: 18px; color: #ccc; text-align: center; }
 
-.portfolio { background-color: #ecf0f1; margin-bottom: 100px; }
+.portfolio { background-color: #f7f7f7; margin-bottom: 100px; }
 
 .portfolio .our-portfolio { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
 
-.portfolio .gallery { display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-pack: distribute; justify-content: space-around; margin-top: 100px; margin-bottom: 100px; }
+.portfolio .gallery { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-pack: center; justify-content: center; margin: 50px 300px; }
 
-.portfolio .gallery .small-div { background-color: #fff; height: 400px; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; margin-top: 30px; margin-bottom: 30px; }
+.portfolio .gallery .small-div { background-color: #fff; width: 293px; height: 303px; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; margin: 30px 20px; -ms-flex-pack: distribute; justify-content: space-around; }
 
-.portfolio .gallery .small-div img { width: 350px; height: 350px; max-width: 100%; -ms-flex: 1; flex: 1; }
+.portfolio .gallery .small-div img { max-width: 100%; width: 293px; height: 370px; -ms-flex: 1; flex: 1; }
 
-.portfolio .gallery .small-div h3 { color: #000; text-align: center; margin-bottom: 0; }
+.portfolio .gallery .small-div h3 { color: #000; text-align: center; margin-bottom: 0; font-size: 18px; font-weight: 700; letter-spacing: -0.45px; }
 
-.portfolio .gallery .small-div p { color: #ccc; text-align: center; margin-top: 0; }
+.portfolio .gallery .small-div p { color: #ccc; text-align: center; margin-top: 0; font-size: 14px; font-style: italic; }
+
+.line { position: relative; display: inline-block; }
+
+.line::after { content: ""; display: block; width: 70%; height: 2px; background: #000; position: absolute; top: 50%; left: calc(100% + 10px); }
+
+.about .about-us { -ms-flex-pack: center; justify-content: center; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; }
+
+.about .july-2010 { -ms-flex-direction: row; flex-direction: row; }
+
+.about .july-2010 img { margin-right: 320px; }
+
+.about .january-2011 { -ms-flex-direction: row-reverse; flex-direction: row-reverse; }
+
+.about .january-2011 img { margin-left: 320px; }
+
+.about .december-2012 { -ms-flex-direction: row; flex-direction: row; }
+
+.about .december-2012 img { margin-right: 320px; }
+
+.about .february-2014 { -ms-flex-direction: row-reverse; flex-direction: row-reverse; }
+
+.about .february-2014 img { margin-left: 320px; }
+
+.about .our-story-continues { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; margin-top: 80px; margin-bottom: 80px; }
+
+.about .our-story-continues div { width: 170px; height: 170px; border-radius: 50%; border: 6px solid #f1f1f1; background-color: #f1c40f; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
+
+.about .our-story-continues div p { text-transform: uppercase; color: #fff; font-weight: 900; text-align: center; }
+
+.team { background-color: #f7f7f7; margin-bottom: 100px; }
+
+.team .amazing-team { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
+
+.team .small-gallery { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: center; justify-content: center; }
+
+.team .small-gallery .flex-gallery img { height: 200px; width: 200px; border-radius: 50%; margin-top: 50px; margin-left: 20px; margin-right: 20px; }
+
+.team .small-gallery .flex-gallery h3 { font-size: 18px; text-align: center; margin-bottom: 5px; }
+
+.team .small-gallery .flex-gallery p { font-size: 16px; color: #ccc; text-align: center; margin-top: 0; }
+
+.team .small-gallery .flex-gallery .fa { height: 35px; line-height: 35px; width: 35px; border: 0 #FFFFFF; cursor: pointer; font-size: 18px; background-color: #000; color: #fff; border-radius: 50%; text-align: center; margin-right: 10px; }
+
+.team .jj { text-align: center; margin: 60px 200px; }
+
+.logos { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
+
+.logos img { height: 50px; margin-right: 15px; margin-bottom: 20px; margin-top: 20px; }
+
+.form { background-color: #000; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; -ms-flex-direction: column; flex-direction: column; }
+
+.form h1 { color: #fff; text-transform: uppercase; font-size: 42px; margin-bottom: 0; }
+
+.form p { color: #ccc; margin-top: 5px; }
+
+.form form { display: -ms-flexbox; display: flex; margin-top: 60px; -ms-flex-direction: column; flex-direction: column; }
+
+.form form .form-container { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; }
+
+.form form .form-container .left-column { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; }
+
+.form form .form-container .left-column input { height: 50px; width: 400px; border-radius: 5px; margin-bottom: 25px; border: #fff; }
+
+.form form .form-container .right-column { width: 400px; margin-left: 25px; }
+
+.form form .form-container .right-column textarea { border-radius: 5px; }
+
+.form form .button { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; padding-top: 50px; }
+
+.form form .button input { width: 200px; height: 50px; background-color: #f1c40f; color: white; font-size: 16px; text-transform: uppercase; border-radius: 5px; border: #f1c40f; }
+
+.footer { background-color: #fff; max-height: 100px; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; margin-right: 370px; -ms-flex-align: space-around; align-items: space-around; -ms-flex-direction: row; flex-direction: row; margin-top: 15px; margin-bottom: 15px; }
+
+.footer p { font-size: 13px; margin-right: 160px; }
+
+.footer .fa { height: 35px; line-height: 35px; width: 35px; border: 0 #FFFFFF; cursor: pointer; font-size: 18px; background-color: #000; color: #fff; border-radius: 50%; text-align: center; margin-right: 10px; }
