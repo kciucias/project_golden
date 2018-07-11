@@ -1,15 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic);
 * { box-sizing: border-box; }
 
-body { margin: 0 auto; font-family: "Open Sans", sans-serif; background-color: #fff; }
+body { margin: 0 auto; font-family: "Open Sans", sans-serif; }
 
-.layout-hight, .hero, .services, .portfolio, .team { min-height: 700px; }
+.icon-btn, .services .three-columns .one-column .center i { height: 70px; line-height: 70px; width: 70px; cursor: pointer; font-size: 42px; background-color: #fff; color: #f1c40f; border-radius: 50%; text-align: center; border: 3px solid #f1c40f; }
 
-.icon-btn, .services .three-columns .one-column .center i { height: 100px; line-height: 100px; width: 100px; cursor: pointer; font-size: 70px; background-color: #fff; color: #f1c40f; border-radius: 50%; text-align: center; }
+.heading h1, .services .small-services h1, .portfolio .our-portfolio h1, .about .about-us h1, .team .amazing-team h1 { color: #000; font-size: 42px; text-transform: uppercase; margin-top: 50px; margin-bottom: 0; text-shadow: 1px 1px 3px; }
 
-.heading h1, .services .small-services h1, .portfolio .our-portfolio h1, .about .about-us h1, .team .amazing-team h1 { color: #000; font-size: 52px; text-transform: uppercase; margin-top: 50px; margin-bottom: 0; text-shadow: 1px 1px 3px; }
+.heading p, .services .small-services p, .portfolio .our-portfolio p, .about .about-us p, .team .amazing-team p { color: #ccc; font-size: 20px; margin-top: 10px; font-weight: bold; font-style: "Lobster", cursive; }
 
-.heading p, .services .small-services p, .portfolio .our-portfolio p, .about .about-us p, .team .amazing-team p { color: #ccc; font-size: 20px; margin-top: 10px; font-weight: bold; }
+.container, .hero, .services, .portfolio, .about, .team, .logos, .form, .footer { max-width: 1200px; width: 100%; margin: 0 auto; }
 
 .div-about-us, .about .july-2010, .about .january-2011, .about .december-2012, .about .february-2014 { display: -ms-flexbox; display: flex; background-color: white; -ms-flex-pack: center; justify-content: center; margin-top: 80px; }
 
@@ -21,37 +21,37 @@ body { margin: 0 auto; font-family: "Open Sans", sans-serif; background-color: #
 
 .div-about-us .small-h p, .about .july-2010 .small-h p, .about .january-2011 .small-h p, .about .december-2012 .small-h p, .about .february-2014 .small-h p { font-size: 14px; text-align: right; }
 
-.div-about-us img, .about .july-2010 img, .about .january-2011 img, .about .december-2012 img, .about .february-2014 img { width: 170px; height: 170px; border-radius: 50%; border: 6px solid #f1f1f1; }
+.div-about-us img, .about .july-2010 img, .about .january-2011 img, .about .december-2012 img, .about .february-2014 img { max-width: 100%; height: auto; height: 200px; width: 200px; border-radius: 50%; border: 6px solid #f1f1f1; }
 
 /*HERO*/
 .hero { background: url(https://images.unsplash.com/photo-1497864149936-d3163f0c0f4b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=362d7bfa3bb12d109ccec4ef185281cf&auto=format&fit=crop&w=500&q=60) 0/cover no-repeat; }
 
 .hero .nav { display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; }
 
-.hero .nav div { display: -ms-flexbox; display: flex; -ms-flex-pack: start; justify-content: flex-start; }
+.hero .nav div { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; }
 
-.hero .nav div > p { color: #f1c40f; width: 79px; height: 28px; color: #fed136; color: #ffffff; font-family: "Wisdom - Script"; font-size: 26px; font-weight: 400; line-height: 41px; /* Text style for "G, olden" */ color: #fed136; letter-spacing: 1.3px; }
+.hero .nav div > p { color: #f1c40f; font-size: 26px; font-weight: 400; }
 
-.hero .nav ul { display: -ms-flexbox; display: flex; -ms-flex-pack: end; justify-content: flex-end; height: 100px; }
+.hero .nav ul { display: -ms-flexbox; display: flex; -ms-flex-pack: end; justify-content: flex-end; }
 
-.hero .nav ul li { text-decoration: none; font-size: 14px; font-weight: 400; line-height: 41px; padding: 20px; text-transform: uppercase; list-style: none; }
+.hero .nav ul li { text-decoration: none; font-size: 14px; font-weight: 400; padding: 20px; text-transform: uppercase; list-style: none; }
 
 .hero .nav ul li > a { color: #fff; text-decoration: none; }
 
-.hero .small-hero { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; }
+.hero .small-hero { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; }
 
-.hero .small-hero h2 { font-size: 34px; color: #fff; margin-top: 100px; }
+.hero .small-hero h2 { font-size: 32px; color: #fff; margin-top: 100px; text-align: center; }
 
-.hero .small-hero h1 { font-size: 78px; color: #fff; text-transform: uppercase; }
+.hero .small-hero h1 { font-size: 78px; color: #fff; text-transform: uppercase; text-align: center; }
 
-.hero .small-hero button { display: -ms-flexbox; display: flex; height: 106px; width: 330px; color: #fff; background-color: #f1c40f; margin: 0 auto; -ms-flex-pack: center; justify-content: center; text-transform: uppercase; font-size: 32px; border-radius: 5px; border-color: #f1c40f; }
+.hero .small-hero button { display: -ms-flexbox; display: flex; max-height: 106px; max-width: 330px; color: #fff; background-color: #f1c40f; margin: 0 auto; -ms-flex-pack: center; justify-content: center; text-transform: uppercase; font-size: 32px; border-radius: 5px; border-color: #f1c40f; margin-bottom: 30px; }
 
 /*SERVICES*/
-.services { display: -ms-flexbox; display: flex; background-color: #fff; -ms-flex-direction: column; flex-direction: column; margin: 50px 200px; }
+.services { display: -ms-flexbox; display: flex; background-color: #fff; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: center; justify-content: center; }
 
 .services .small-services { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; }
 
-.services .three-columns { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; padding-top: 50px; }
+.services .three-columns { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; padding-top: 50px; margin-bottom: 60px; }
 
 .services .three-columns .one-column { padding: 0 30px; }
 
@@ -59,28 +59,41 @@ body { margin: 0 auto; font-family: "Open Sans", sans-serif; background-color: #
 
 .services .three-columns .one-column .center i { text-align: center; margin: 0 auto; }
 
-.services .three-columns .one-column h4 { font-size: 24px; margin-top: 5px; margin-bottom: 5px; text-align: center; }
+.services .three-columns .one-column h4 { font-size: 20px; margin-top: 10px; margin-bottom: 5px; text-align: center; }
 
-.services .three-columns .one-column p { margin-top: 0px; font-size: 18px; color: #ccc; text-align: center; }
+.services .three-columns .one-column p { margin-top: 0px; font-size: 16px; color: #ccc; text-align: center; }
 
-.portfolio { background-color: #f7f7f7; margin-bottom: 100px; }
+.portfolio { background-color: #f7f7f7; }
 
 .portfolio .our-portfolio { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
 
-.portfolio .gallery { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-pack: center; justify-content: center; margin: 50px 300px; }
+.portfolio .gallery { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-pack: center; justify-content: center; }
 
 .portfolio .gallery .small-div { background-color: #fff; width: 293px; height: 303px; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; margin: 30px 20px; -ms-flex-pack: distribute; justify-content: space-around; }
 
-.portfolio .gallery .small-div img { max-width: 100%; width: 293px; height: 370px; -ms-flex: 1; flex: 1; }
+.portfolio .gallery .small-div img { max-width: 100%; height: auto; -ms-flex: 1; flex: 1; }
 
 .portfolio .gallery .small-div h3 { color: #000; text-align: center; margin-bottom: 0; font-size: 18px; font-weight: 700; letter-spacing: -0.45px; }
 
 .portfolio .gallery .small-div p { color: #ccc; text-align: center; margin-top: 0; font-size: 14px; font-style: italic; }
 
-.line { position: relative; display: inline-block; }
+/*
+.line {
+  position: relative;
+  display: inline-block;
+}
 
-.line::after { content: ""; display: block; width: 70%; height: 2px; background: #000; position: absolute; top: 50%; left: calc(100% + 10px); }
-
+.line::after {
+  content:"";
+  display: block;
+  width: 70%;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 10px);
+}
+*/
 .about .about-us { -ms-flex-pack: center; justify-content: center; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; }
 
 .about .july-2010 { -ms-flex-direction: row; flex-direction: row; }
@@ -105,13 +118,13 @@ body { margin: 0 auto; font-family: "Open Sans", sans-serif; background-color: #
 
 .about .our-story-continues div p { text-transform: uppercase; color: #fff; font-weight: 900; text-align: center; }
 
-.team { background-color: #f7f7f7; margin-bottom: 100px; }
+.team { background-color: #f7f7f7; margin-bottom: 60px; padding-bottom: 50px; padding-top: 50px; }
 
 .team .amazing-team { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
 
 .team .small-gallery { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: center; justify-content: center; }
 
-.team .small-gallery .flex-gallery img { height: 200px; width: 200px; border-radius: 50%; margin-top: 50px; margin-left: 20px; margin-right: 20px; }
+.team .small-gallery .flex-gallery img { height: 150px; width: 150px; border-radius: 50%; margin-top: 50px; margin-left: 20px; margin-right: 20px; }
 
 .team .small-gallery .flex-gallery h3 { font-size: 18px; text-align: center; margin-bottom: 5px; }
 
@@ -119,13 +132,13 @@ body { margin: 0 auto; font-family: "Open Sans", sans-serif; background-color: #
 
 .team .small-gallery .flex-gallery .fa { height: 35px; line-height: 35px; width: 35px; border: 0 #FFFFFF; cursor: pointer; font-size: 18px; background-color: #000; color: #fff; border-radius: 50%; text-align: center; margin-right: 10px; }
 
-.team .jj { text-align: center; margin: 60px 200px; }
+.team .jj { text-align: center; margin: 60px 250px; }
 
-.logos { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
+.logos { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; margin-bottom: 60px; }
 
-.logos img { height: 50px; margin-right: 15px; margin-bottom: 20px; margin-top: 20px; }
+.logos img { max-height: 80px; margin-right: 15px; }
 
-.form { background-color: #000; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; -ms-flex-direction: column; flex-direction: column; }
+.form { background-color: #000; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; -ms-flex-direction: column; flex-direction: column; padding-bottom: 60px; }
 
 .form h1 { color: #fff; text-transform: uppercase; font-size: 42px; margin-bottom: 0; }
 
@@ -147,8 +160,26 @@ body { margin: 0 auto; font-family: "Open Sans", sans-serif; background-color: #
 
 .form form .button input { width: 200px; height: 50px; background-color: #f1c40f; color: white; font-size: 16px; text-transform: uppercase; border-radius: 5px; border: #f1c40f; }
 
-.footer { background-color: #fff; max-height: 100px; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; margin-right: 370px; -ms-flex-align: space-around; align-items: space-around; -ms-flex-direction: row; flex-direction: row; margin-top: 15px; margin-bottom: 15px; }
+.footer { background-color: #fff; max-height: 100px; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; margin-right: 530px; -ms-flex-align: space-around; align-items: space-around; -ms-flex-direction: row; flex-direction: row; margin-top: 15px; margin-bottom: 15px; }
 
 .footer p { font-size: 13px; margin-right: 160px; }
 
 .footer .fa { height: 35px; line-height: 35px; width: 35px; border: 0 #FFFFFF; cursor: pointer; font-size: 18px; background-color: #000; color: #fff; border-radius: 50%; text-align: center; margin-right: 10px; }
+
+/*phones*/
+@media (max-width: 767px) { .hero { max-width: 100%; }
+  .hero .nav { -ms-flex-direction: column; flex-direction: column; }
+  .hero .nav p { font-size: 60px; }
+  .hero .nav ul { background-color: #ccc; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; -ms-flex-direction: column; flex-direction: column; padding: 20px; }
+  .hero .nav ul li { font-size: 20px; }
+  .hero .small-hero h2 { font-size: 24px; margin-top: 20px; }
+  .hero .small-hero h1 { font-size: 24px; }
+  .hero .small-hero button { font-size: 18px; border-radius: 5px; padding: 5px; }
+  .services .three-columns { -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: center; justify-content: center; margin-bottom: 20px; }
+  .portfolio .gallery { margin-top: 20px; padding-bottom: 30px; }
+  .portfolio .gallery .small-div { margin: 0 auto; max-width: 100%; height: auto; }
+  .about .july-2010, .about .december-2012 { -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; }
+  .about .july-2010 .small-h img, .about .december-2012 .small-h img { margin-right: 0; }
+  .about .january-2011, .about .february-2014 { -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; }
+  .about .january-2011 .small-h img, .about .february-2014 .small-h img { margin-right: 0; }
+  .team .small-gallery { -ms-flex-direction: column; flex-direction: column; } }

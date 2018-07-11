@@ -6,44 +6,41 @@
 
 //variables
 $color-white: #fff;
-$color-gold: #f1c40f;
 $color-black: #000;
+$color-gold: #f1c40f;
 $color-grey: #ccc;
 $color-greylight: #ecf0f1;
 $color-backgroundgrey: #f7f7f7;
 $color-border-img: #f1f1f1;
 $fonts: 'Open Sans', sans-serif;
+$fonts2: 'Montserrat', sans-serif;
+$fonts-logo: 'Lobster', cursive;
 
 
 body {
   margin: 0 auto;
   font-family: $fonts;
-  background-color: $color-white;
 }
-
 
 //extends
 
-.layout-hight {
-	min-height: 700px;
-
-}
 .icon-btn {
-	height: 100px;
-	line-height: 100px;
-	width: 100px;
+	height: 70px;
+	line-height: 70px;
+	width: 70px;
 	cursor: pointer;
-	font-size: 70px;
+	font-size: 42px;
 	background-color: $color-white;
 	color: $color-gold;
 	border-radius: 50%;
 	text-align: center;
+	border: 3px solid $color-gold;
 }
 
 .heading {
 	h1 {
 		color: $color-black;
-		font-size: 52px;
+		font-size: 42px;
 		text-transform: uppercase;
 		margin-top: 50px;
 		margin-bottom: 0;
@@ -54,7 +51,14 @@ body {
 		font-size: 20px;
 		margin-top: 10px;
 		font-weight: bold;
+		font-style: $fonts-logo;
 	}
+}
+
+.container {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
 }
 
 .div-about-us {
@@ -87,11 +91,12 @@ body {
 			}
 		}
 		img {
-			width: 170px;
-			height: 170px;
+			max-width: 100%;
+			height: auto;
+			height: 200px;
+			width: 200px;
 			border-radius: 50%;
-			border: 6px solid $color-border-img;
-				
+			border: 6px solid $color-border-img;	
 		}
 	}
 
@@ -100,38 +105,26 @@ body {
 
 .hero {
 	background: url(https://images.unsplash.com/photo-1497864149936-d3163f0c0f4b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=362d7bfa3bb12d109ccec4ef185281cf&auto=format&fit=crop&w=500&q=60) 0/cover no-repeat;
-	@extend .layout-hight;
+	@extend .container;
 	.nav {
-		display: flex; // for all elements in container
-		justify-content: space-around; // for all elements
+		display: flex; 
+		justify-content: space-around; 
 		div {
 			display: flex;
-			justify-content: flex-start;
+			justify-content: center;
 			> p {
 				color: $color-gold;
-				width: 79px;
-				height: 28px;
-				color: #fed136;
-				color: #ffffff;
-				font-family: "Wisdom - Script";
 				font-size: 26px;
-				font-weight: 400;
-				line-height: 41px;
-				/* Text style for "G, olden" */
-				color: #fed136;
-				letter-spacing: 1.3px;					
+				font-weight: 400;	
 			}
-		}
-			
+		}	
 		ul {
 			display: flex;
 			justify-content: flex-end;
-			height: 100px;
 			li  {
 				text-decoration: none;
 				font-size: 14px;
 				font-weight: 400;
-				line-height: 41px;
 				padding: 20px;
 				text-transform: uppercase;
 				list-style: none;	
@@ -145,21 +138,24 @@ body {
 	.small-hero {
 		display: flex;
 		flex-direction: column;
-		align-items: center; // for container for all elements in container
+		align-items: center; 
+		justify-content: center;
 		h2 {
-			font-size: 34px;
+			font-size: 32px;
 			color: $color-white;
 			margin-top: 100px;
+			text-align: center;
 		}	
 		h1 {
 			font-size: 78px;
 			color: $color-white;
 			text-transform: uppercase;
+			text-align: center;
 		}
 		button {
 			display: flex;
-			height: 106px;
-			width: 330px;
+			max-height: 106px;
+			max-width: 330px;
 			color: $color-white;
 			background-color: $color-gold;
 			margin: 0 auto;
@@ -168,18 +164,22 @@ body {
 			font-size: 32px;
 			border-radius: 5px;
 			border-color: $color-gold;
+			margin-bottom: 30px;
 		}
 	}
 }
 
+
+
+
 /*SERVICES*/
 
 .services {
+	@extend .container;
 	display: flex;
 	background-color: $color-white;
-	@extend .layout-hight;
 	flex-direction: column;
-	margin: 50px 200px;
+	justify-content: center;
 	.small-services {
 		display: flex;
 		flex-direction: column;
@@ -190,6 +190,7 @@ body {
 		display: flex;
 		flex-direction: row;
 		padding-top: 50px;
+		margin-bottom: 60px;
 		.one-column {
 			padding: 0 30px;
 			.center {
@@ -202,14 +203,14 @@ body {
 				}
 			}
 			 	h4 {
-					font-size: 24px;
-					margin-top: 5px;
+					font-size: 20px;
+					margin-top: 10px;
 					margin-bottom: 5px;
 					text-align: center;
 				}
 			 	p {
 					margin-top: 0px;
-					font-size: 18px;
+					font-size: 16px;
 					color: $color-grey;
 					text-align: center;
 			}
@@ -220,8 +221,7 @@ body {
 	
 .portfolio {
 	background-color: $color-backgroundgrey;
-	margin-bottom: 100px;
-	@extend .layout-hight;
+	@extend .container;
 	.our-portfolio {
 		display: flex;
 		flex-direction: column;
@@ -234,7 +234,6 @@ body {
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
-		margin: 50px 300px;
 			.small-div {
 				background-color: $color-white;
 				width: 293px;
@@ -245,8 +244,7 @@ body {
 				justify-content: space-around;
 				img {
 					max-width: 100%;
-					width: 293px;
-					height: 370px;
+					height: auto;
 					flex: 1;
 				}
 				h3 {
@@ -267,7 +265,7 @@ body {
 		}
 	}	
 }
-
+/*
 .line {
   position: relative;
   display: inline-block;
@@ -283,8 +281,9 @@ body {
   top: 50%;
   left: calc(100% + 10px);
 }
-
+*/
 .about {
+	@extend .container;
 	.about-us {
 		@extend .heading;
 		justify-content: center;
@@ -346,9 +345,11 @@ body {
 }
 	
 .team {
+	@extend .container;
 	background-color: $color-backgroundgrey;
-	margin-bottom: 100px;
-	@extend .layout-hight;
+	margin-bottom: 60px;
+	padding-bottom: 50px;
+	padding-top: 50px;
 	.amazing-team {
 		@extend .heading;
 		display: flex;
@@ -362,8 +363,8 @@ body {
 		justify-content: center;
 		.flex-gallery {
 			img {
-				height: 200px;
-				width: 200px;
+				height: 150px;
+				width: 150px;
 				border-radius: 50%;
 				margin-top: 50px;
 				margin-left: 20px;
@@ -398,30 +399,32 @@ body {
 
 	.jj {
 		text-align: center;
-		margin: 60px 200px;
+		margin: 60px 250px;
 	}
 
 }
 
 .logos {
+	@extend .container;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	margin-bottom: 60px;
 		img {
-			height: 50px;
+			max-height: 80px;
 			margin-right: 15px;
-			margin-bottom: 20px;
-			margin-top: 20px;
 		}
 }
 
 .form {
+	@extend .container;
 	background-color: #000;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	padding-bottom: 60px;
 	h1 {
 		color: $color-white;
 		text-transform: uppercase;
@@ -459,29 +462,30 @@ body {
 			}
 		}
 		.button {
-				display: flex;
-				justify-content: center;
-				padding-top: 50px;
-				input {
-					width: 200px;
-					height: 50px;
-					background-color: $color-gold;
-					color: white;
-					font-size: 16px;
-					text-transform: uppercase;
-					border-radius: 5px;
-					border: $color-gold;
-				}
+			display: flex;
+			justify-content: center;
+			padding-top: 50px;
+			input {
+				width: 200px;
+				height: 50px;
+				background-color: $color-gold;
+				color: white;
+				font-size: 16px;
+				text-transform: uppercase;
+				border-radius: 5px;
+				border: $color-gold;
+			}
 		}
 	}
 }
 
 .footer {
+	@extend .container;
 	background-color: $color-white;
 	max-height: 100px;
 	display: flex;
 	justify-content: center;
-	margin-right: 370px;
+	margin-right: 530px;
 	align-items: space-around;
 	flex-direction: row;
 	margin-top: 15px;
@@ -505,4 +509,87 @@ body {
 	}	
 }
 
- 
+
+/*phones*/
+@media(max-width: 767px) {
+	.hero {
+		max-width: 100%;
+		.nav {
+			flex-direction: column;
+			p {
+				font-size: 60px;
+			}
+			ul {
+				background-color: $color-grey;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				padding: 20px;
+				li {
+					font-size: 20px;
+				}
+			}
+		}
+		.small-hero {
+			h2 {
+				font-size: 24px;
+				margin-top: 20px;
+			}
+			h1 {
+				font-size: 24px;
+			}
+			button {
+				font-size: 18px;
+				border-radius: 5px;
+				padding: 5px;
+			}
+		}
+	}
+	.services {
+		.three-columns {
+			flex-direction: column;
+			justify-content: center;
+			margin-bottom: 20px;
+		}
+	}
+	.portfolio {
+		.gallery {
+			margin-top: 20px;
+			padding-bottom: 30px;
+			.small-div {
+				margin: 0 auto;
+				max-width: 100%;
+				height: auto;
+			}
+		}
+	}
+	.about {
+		.july-2010,
+		.december-2012 {
+			flex-direction: column;
+			align-items: center;
+			.small-h {
+				img {
+					margin-right: 0;
+				}
+			}
+		}
+		.january-2011,
+		.february-2014 {
+			flex-direction: column;
+			align-items: center;
+			.small-h {
+				img {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+	.team {
+		.small-gallery {
+			flex-direction: column;
+		}
+	}
+
+} 
+
