@@ -1,0 +1,48 @@
+@import 'variables';
+
+
+body {
+	margin: 0;
+	font-family: $general-fonts;
+	background-color: $backgroundgrey;
+}
+
+/*RWD Queries*/
+//desktop
+@media (min-width: 940px) {
+	.container {
+	    max-width: 940px;
+	    padding: 0;
+	}
+}
+
+
+
+
+/*@media (max-width: 640px) {
+  #about-us article {
+    margin-bottom: 50px;
+  }
+
+  #about-us {
+    text-align: center;
+  }
+  
+  #about-us article {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  #about-us .image-wrapper {
+    width: 100%;
+  }
+  
+  #about-us .image-parent:after {
+    content: none;
+  }
+  
+  #about-us .image-wrapper {
+    order: 1;
+  }
+
+*/
