@@ -67,7 +67,6 @@
 
 @media (max-width: 767.98px) { 
 	.hero {
-		background: url("../images/hero.jpg") no-repeat center;
 		img {
 			display: block;
 	    	margin-left: auto;
@@ -342,7 +341,7 @@
 	background-color: #fff;
 	height: 90px;
 	margin-top: 40px;
-		p {
+	p {
 		color: #555555;
 		font-size: 14px;
 		font-weight: 400;
@@ -361,11 +360,5 @@
 		text-align: center;
 		margin-right: 2px;
 		margin-left: 2px;
-	}		
+	}
 }
-
-
-
-
-
-
